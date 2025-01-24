@@ -5,9 +5,6 @@ export const metadata = {
 };
 
 export default function Page() {
-  // const res = fetch("https://jsonplaceholder.typicode.com/users");
-  // const data = res.json();
-  // console.log(data);
   return (
     <div>
       <h1>Cabins page</h1>
