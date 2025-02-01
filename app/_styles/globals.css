@@ -35,6 +35,12 @@
 .rdp-root {
   --rdp-cell-size: 32px !important;
   --rdp-accent-color: theme("colors.accent.500") !important;
-  --rdp-background-color: theme("colors.accent.600") !important;
+  --rdp-accent-background-color: theme("colors.accent.600") !important;
   margin: 0 !important;
+}
+.rdp-day:hover {
+  background-color: #ffae35 !important; /* Light orange background */
+  color: white !important; /* White text */
+  border-radius: 50%; /* Optional: make it circular */
+  transition: all 0.2s ease-in-out;
 }
