@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏕️ Luxury Cabin Booking Website 🏕️
 
-## Getting Started
+This is a Next.js study project application for a luxury cabin booking website. It utilizes Supabase for database management and user authentication.
 
-First, run the development server:
+## ✨ Features ✨
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+* **Home Page:**
+    * Showcases stunning images of the cabins and surrounding scenery.
+    * Includes a call-to-action button to explore available cabins.
+* **Cabin Listings:**
+    * Displays a list of available cabins with key information (e.g., name, capacity, images).
+    * Includes a filter to narrow down the search by cabin capacity.
+* **Cabin Details:**
+    * Provides detailed information about a specific cabin, including descriptions, images, and amenities.
+    * Allows users to make reservations with a reservation form.
+* **User Authentication:**
+    * Enables user registration and login using Supabase Auth.
+    * Provides a secure guest area for logged-in users.
+* **Guest Area:**
+    * Allows users to view and manage their reservations.
+    * Enables users to update their profile information.
+* **About Page:**
+    * Provides information about the business, its history, and the surrounding area.
+
+## 🛠️ Project Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository_url>
+  ```
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd <project_directory>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4. **Configure Supabase environment variables:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    * Create a `.env.local` file in the project root.
+    * Add your Supabase project URL and API key to the `.env.local` file:
+      ```
+      NEXT_PUBLIC_SUPABASE_URL=<your-supabase-url>
+      NEXT_PUBLIC_SUPABASE_ANON_KEY=<your-supabase-anon-key> 
+      ```
 
-## Learn More
+5. **Start the development server:**
+   ```bash
+   npm run dev
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+## 💾 Data Fetching
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Utilizes a data service (`_lib/data-service.js`) to interact with the Supabase database to fetch cabin data, booked dates, and user information.
+* Leverages `getStaticParams()` and `generateStaticProps()` for server-side data fetching.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🎨 Styling
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* Uses Tailwind CSS for styling and layout.
+* Includes custom CSS for additional styling.
