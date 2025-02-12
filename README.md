@@ -26,7 +26,7 @@ This is a Next.js study project application for a luxury cabin booking website. 
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
+   git clone <[repository_url](https://github.com/Dimitriy07/hotel-registration-website.git)>
   ```
 
 2. **Navigate to the project directory:**
